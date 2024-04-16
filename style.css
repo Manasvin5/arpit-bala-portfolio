@@ -103,7 +103,6 @@ header {
 }
 
 
-
 .btns a {
     border: 1px solid rgb(207, 255, 201);
     padding: 7px 50px;
@@ -160,7 +159,9 @@ header {
     transform: scale(1.25)!important;
 }
 
-
+.home{
+    align-items: center;
+}
 
 .bala{margin-left: 50px;}
 .bala img{border-radius: 90px;
