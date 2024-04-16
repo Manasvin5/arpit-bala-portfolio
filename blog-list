@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Listing</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #002b36;
+            color: #839496;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #073642;
+        }
+
+        .navbar-brand {
+            color: #b58900;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar-links a {
+            color: #839496;
+            text-decoration: none;
+        }
+
+        .navbar-links a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #b58900;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            border-bottom: 1px solid #586e75;
+            padding: 10px 0;
+        }
+
+        a {
+            color: #268bd2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .blog-description {
+            color: #586e75;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">My Blog</div>
+        <div class="navbar-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Blog Listing</h1>
+        <ul>
+            <li>
+                <a href="blog1.html">Blog Post 1</a>
+                <p class="blog-description">Short description about Blog Post 1.</p>
+            </li>
+            <li>
+                <a href="blog2.html">Blog Post 2</a>
+                <p class="blog-description">Short description about Blog Post 2.</p>
+            </li>
+            <li>
+                <a href="blog3.html">Blog Post 3</a>
+                <p class="blog-description">Short description about Blog Post 3.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
