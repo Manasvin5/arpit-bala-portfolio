@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manasvin's Blog</title>
+    <title>Blog Title</title>
     <style>
         body {
             font-family: 'Fira Code', monospace;
@@ -18,7 +18,7 @@
         nav {
             text-align: center;
             background-color: #063540;
-            padding: 3px 0;
+            padding: 2px 0;
             align-items: center;
             transition: 1s ease;
             
@@ -33,13 +33,10 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
-            
         }
 
         nav a:hover {
             color: #b58900;
-            
-
         }
 
         .content {
@@ -54,42 +51,45 @@
             color: #ebdfba;
         }
 
-        p {
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
             line-height: 1.7;
+        }
+
+        ul li strong {
+            font-weight: 600;
+            color: #b58900;
         }
     </style>
 </head>
 
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="blog-list">Stuff & Linux</a>
+        <a href="blog-home.html">Home</a>
+        <a href="blog-list.html">Blog</a>
         <a href="about.html">About</a>
-
     </nav>
+
     <div class="content">
-        <h1>hi & Welcome to My Blog :) </h1>
-        <p>Hi and welcome! This blog is a collection of thoughts and interests, though I admit, I'm more into tweaking
-            my setup than actually writing posts.</p>
-        <p>Here's what you can expect to find:</p>
+        <h1>{{ Welcome Heading }}</h1>
+        <p>{{ Introductory Paragraph }}</p>
+
+        <h2>What to Expect</h2>
         <ul>
-            <li><span style="font-weight: 600; color: #b58900;">Personal stuff: </span>Linux on Retro devices, homemade
-                servers,terminal/cli apps no one needs....(basically pointless./)</li>
-            <li> <span style="font-weight: 600; color: #b58900;"">Emacs stuff: </span></li>
-            <li> <span style=" font-weight: 600; color: #b58900;"">Linux stuff: </span> reviews of Linux distros,
-                window managers, terminal emulators...</li>
-            <li>Random internet finds that excite me (similar to personal stuff, but made by others)</li>
-            <li><span style="font-weight: 600; color: #b58900;"">Coding Project Rants: </span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ipsam nesciunt voluptates quae maiores? Similique, distinctio hic assumenda quaerat incidunt error nulla dolor.</li>
-            <li><span style=" font-weight: 600; color: #b58900;"">Movie/ Anime/ Manga/ Games: </span>(i dont play games
-                that much) Reviews</li>
+            <li><strong>Personal Stuff:</strong> Linux on Retro devices, homemade servers, terminal/cli apps...</li>
+            <li><strong>Emacs Stuff:</strong> ...</li>
+            <li><strong>Linux Stuff:</strong> Reviews of Linux distros, window managers, terminal emulators...</li>
+            <li>Random internet finds that excite me.</li>
+            <li><strong>Coding Project Rants:</strong> Lorem ipsum dolor...</li>
+            <li><strong>Media Reviews:</strong> Movies, Anime, Manga, Games...</li>
         </ul>
-        <p>You'll will all the useless info by clicking on the above sections (assuming I find the time to write them).
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum dolores explicabo, adipisci ea ipsum excepturi
-            nisi architecto mollitia error placeat ad minima. Id, aliquam rerum neque dolore minima explicabo,
-            blanditiis, et delectus dolorum in inventore consequatur ipsum soluta sit quas necessitatibus. Amet illum
-            praesentium accusamus voluptatibus pariatur eveniet itaque, quas cumque facilis, nam asperiores, accusantium
-            sit!</p>
+
+        <p>{{ Closing Note }}</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
     </div>
 </body>
 
